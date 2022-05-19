@@ -1,0 +1,52 @@
+.title{
+    border-radius: 5%;
+    background-color: #c2a90f;
+    padding: 35px;
+}
+
+h2{
+    margin-left: 1100px;
+    margin-top: -80px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.words{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-left: 150px;
+    margin-right: 100px;
+    height: 600px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.article{
+    flex-direction: row;
+    display: flex;
+}
+
+img{
+    height: 300px;
+    width: 400px;
+    margin-top: 100px;
+    margin-right: 75px;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsor img{
+    width: 300px;
+    height: 900px;
+}
+
+body{
+    animation: fadeIn ease 1.5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity: 1;}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The New Method</title>
+    <!-- <link rel="stylesheet" href="style1.css" type="text/css"/> -->
+    <style>
+      body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url("spiral.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fade ease 3s;
+}
+  
+svg{
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+}
+  
+path{
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity:100;}
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 150 150" version="1.1">
+            <defs>
+              <clipPath id="clip">
+                <circle cx="75" cy="75" r="75"/>
+              </clipPath>
+            </defs>
+              <circle cx="75" cy="75" fill="#eee" r="75"/>
+            <path id="the-path" stroke-linecap="butt" clip-path="url(#clip)">
+                <animateTransform attributeType="xml"
+                              attributeName="transform"
+                              type="rotate"
+                              from="0 75 75"
+                              to="360 75 75"
+                              dur=".75s"
+                              repeatCount="indefinite"/>    
+            </path>
+          </svg>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
